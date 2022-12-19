@@ -21,6 +21,6 @@ Java pattern program can be executed in different designs.
 
 Java pattern problems are classified into three categories:
 
-    * Character Pattern
-    * Number Pattern
-    * Star Pattern
+- Character Pattern
+- Number Pattern
+- Star Pattern
