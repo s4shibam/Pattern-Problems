@@ -2,7 +2,15 @@
 
 /* 
 -----------------
-
+5  5  5  5  5  5  5  5  5  
+5  4  4  4  4  4  4  4  5  
+5  4  3  3  3  3  3  4  5  
+5  4  3  2  2  2  3  4  5  
+5  4  3  2  1  2  3  4  5  
+5  4  3  2  2  2  3  4  5  
+5  4  3  3  3  3  3  4  5
+5  4  4  4  4  4  4  4  5
+5  5  5  5  5  5  5  5  5
 -----------------
 */
 
@@ -18,13 +26,10 @@ public class Number_Pattern_25 {
         System.out.print("Enter range for Row = ");
         n = sc.nextInt();
 
-        // Outer loop
-        for (int i = ) {
+        for (int i = -n + 1; i < n; i++) {
 
-            // Inner Loop
-            for (int j = ) {
-
-                System.out.print(j + " ");
+            for (int j = -n + 1; j < n; j++) {
+                System.out.printf("%d  ", (Math.max(Math.abs(i), Math.abs(j))) + 1);
             }
             System.out.println();
         }
