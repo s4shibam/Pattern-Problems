@@ -1,22 +1,21 @@
-// Character Pattern 8
+// Number Pattern 5
 
 /* 
 -----------------
-A 
-A B
-A B C
-A B C D
-A B C D E
+1 2 3 4 5 
+1 2 3 4   
+1 2 3     
+1 2       
+1    
 -----------------
 */
 
 import java.util.*;
 
-public class Character_Pattern_8 {
+public class Number_Pattern_05 {
 
     public static void main(String[] args) {
 
-        char c = 'A';
         int n;
 
         Scanner sc = new Scanner(System.in);
@@ -24,20 +23,13 @@ public class Character_Pattern_8 {
         n = sc.nextInt();
 
         // Outer loop
-        for (int i = 1; i <= n; i++) {
+        for (int i = n; i >= 1; i--) {
 
             // Inner Loop
             for (int j = 1; j <= i; j++) {
 
-                System.out.print(c + " ");
-
-                // Repeat Alphabets if it ends
-                if (c == 'Z')
-                    c = 'A';
-                else
-                    c++;
+                System.out.print(j + " ");
             }
-            c = 'A';
             System.out.println();
         }
 

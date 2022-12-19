@@ -1,18 +1,18 @@
-// Character Pattern 3
+// Character Pattern 2
 
 /* 
 -----------------
-A B C D E 
-A B C D
-A B C
-A B
-A
+A         
+B C       
+D E F     
+G H I J   
+K L M N O
 -----------------
 */
 
 import java.util.*;
 
-public class Character_Pattern_3 {
+public class Character_Pattern_02 {
 
     public static void main(String[] args) {
 
@@ -24,10 +24,10 @@ public class Character_Pattern_3 {
         n = sc.nextInt();
 
         // Outer loop
-        for (int i = n; i >= 1; i--) {
+        for (int i = 1; i <= n; i++) {
 
             // Inner Loop
-            for (int j = 1; j <= i; j++) {
+            for (int j = i; j >= 1; j--) {
 
                 System.out.print(c + " ");
 
@@ -37,7 +37,6 @@ public class Character_Pattern_3 {
                 else
                     c++;
             }
-            c = 'A';
             System.out.println();
         }
 

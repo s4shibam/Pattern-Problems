@@ -1,17 +1,18 @@
-// Scalene Triangle Pattern
+// Number Pattern 6
 
 /* 
 -----------------
-        * * * * 
-      * * *
-    * *
-  *
+5 4 3 2 1 
+5 4 3 2   
+5 4 3     
+5 4       
+5
 -----------------
 */
 
 import java.util.*;
 
-public class Scalene_Triangle {
+public class Number_Pattern_06 {
 
     public static void main(String[] args) {
 
@@ -24,18 +25,14 @@ public class Scalene_Triangle {
         // Outer loop
         for (int i = 1; i <= n; i++) {
 
-            // Inner loop -> Space print
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print("  ");
-            }
+            // Inner Loop
+            for (int j = n; j >= i; j--) {
 
-            // Inner loop-> Star print
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print("* ");
+                System.out.print(j + " ");
             }
             System.out.println();
-
         }
+
         sc.close();
     }
 }

@@ -1,18 +1,18 @@
-// Character Pattern 7
+// Character Pattern 4
 
 /* 
 -----------------
 E D C B A 
-D C B A
-C B A
-B A
-A
+E D C B
+E D C
+E D
+E
 -----------------
 */
 
 import java.util.*;
 
-public class Character_Pattern_7 {
+public class Character_Pattern_04 {
 
     public static void main(String[] args) {
 
@@ -27,16 +27,18 @@ public class Character_Pattern_7 {
             sc.close();
             return;
         }
-        n = 64 + n;
+        char c = (char) (64 + n);
 
         // Outer loop
-        for (int i = n; i >= 65; i--) {
+        for (int i = 1; i <= n; i++) {
 
             // Inner Loop
-            for (int j = i; j >= 65; j--) {
+            for (int j = n; j >= i; j--) {
 
-                System.out.print(((char) j) + " ");
+                System.out.print(c + " ");
+                c--;
             }
+            c = (char) (64 + n);
             System.out.println();
         }
 

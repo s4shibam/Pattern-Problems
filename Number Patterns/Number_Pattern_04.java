@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class Number_Pattern_4 {
+public class Number_Pattern_04 {
 
     public static void main(String[] args) {
 

@@ -12,7 +12,7 @@ E D C B A
 
 import java.util.*;
 
-public class Character_Pattern_6 {
+public class Character_Pattern_06 {
 
     public static void main(String[] args) {
 

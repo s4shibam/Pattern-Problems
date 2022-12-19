@@ -1,44 +1,43 @@
-// Character Pattern 5
+// Character Pattern 3
 
 /* 
 -----------------
-E 
-E D
-E D C
-E D C B
-E D C B A
+A B C D E 
+A B C D
+A B C
+A B
+A
 -----------------
 */
 
 import java.util.*;
 
-public class Character_Pattern_5 {
+public class Character_Pattern_03 {
 
     public static void main(String[] args) {
 
+        char c = 'A';
         int n;
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter range for Row = ");
         n = sc.nextInt();
 
-        if (n > 26 || n == 0) {
-            System.out.println("\nError!!\nInput Range should be 1 to 26");
-            sc.close();
-            return;
-        }
-        char c = (char) (64 + n);
-
         // Outer loop
         for (int i = n; i >= 1; i--) {
 
             // Inner Loop
-            for (int j = n; j >= i; j--) {
+            for (int j = 1; j <= i; j++) {
 
                 System.out.print(c + " ");
-                c--;
+
+                // Repeat Alphabets if it ends
+                if (c == 'Z')
+                    c = 'A';
+                else
+                    c++;
             }
-            c = (char) (64 + n);
+            c = 'A';
             System.out.println();
         }
 

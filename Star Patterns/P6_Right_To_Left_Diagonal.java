@@ -1,22 +1,21 @@
-// Character Pattern 2
+// Right To Left Diagonal Pattern
 
 /* 
 -----------------
-A         
-B C       
-D E F     
-G H I J   
-K L M N O
+        * 
+      *
+    *
+  *
+*
 -----------------
 */
 
 import java.util.*;
 
-public class Character_Pattern_2 {
+public class P6_Right_To_Left_Diagonal {
 
     public static void main(String[] args) {
 
-        char c = 'A';
         int n;
 
         Scanner sc = new Scanner(System.in);
@@ -26,20 +25,18 @@ public class Character_Pattern_2 {
         // Outer loop
         for (int i = 1; i <= n; i++) {
 
-            // Inner Loop
-            for (int j = i; j >= 1; j--) {
+            // Inner loop -> Space print
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
 
-                System.out.print(c + " ");
+            }
 
-                // Repeat Alphabets if it ends
-                if (c == 'Z')
-                    c = 'A';
-                else
-                    c++;
+            // Inner loop-> Star print
+            for (int j = 1; j <= 1; j++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
-
         sc.close();
     }
 }

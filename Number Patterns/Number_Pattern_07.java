@@ -1,4 +1,4 @@
-// Number Pattern 5
+// Number Pattern 7
 
 /* 
 -----------------
@@ -6,13 +6,13 @@
 1 2 3 4   
 1 2 3     
 1 2       
-1    
+1   
 -----------------
 */
 
 import java.util.*;
 
-public class Number_Pattern_5 {
+public class Number_Pattern_07 {
 
     public static void main(String[] args) {
 

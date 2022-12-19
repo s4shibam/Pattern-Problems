@@ -1,18 +1,18 @@
-// Number Pattern 6
+// Number Pattern 8 (Only odd number printing)
 
 /* 
 -----------------
-5 4 3 2 1 
-5 4 3 2   
-5 4 3     
-5 4       
-5
+1 3 5 7 9 
+1 3 5 7
+1 3 5
+1 3
+1
 -----------------
 */
 
 import java.util.*;
 
-public class Number_Pattern_6 {
+public class Number_Pattern_08 {
 
     public static void main(String[] args) {
 
@@ -21,14 +21,16 @@ public class Number_Pattern_6 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter range for Row = ");
         n = sc.nextInt();
+        n = n + (n - 1);
 
         // Outer loop
-        for (int i = 1; i <= n; i++) {
+        for (int i = n; i >= 1; i = i - 2) {
 
             // Inner Loop
-            for (int j = n; j >= i; j--) {
+            for (int j = 1; j <= i; j++) {
 
-                System.out.print(j + " ");
+                if (j % 2 != 0)
+                    System.out.print(j + " ");
             }
             System.out.println();
         }

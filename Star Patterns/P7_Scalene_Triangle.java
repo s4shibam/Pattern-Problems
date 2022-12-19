@@ -1,18 +1,17 @@
-// Number Pattern 3
+// Scalene Triangle Pattern
 
 /* 
 -----------------
-1 2 3 4 5 
-2 3 4 5   
-3 4 5     
-4 5       
-5
+        * * * * 
+      * * *
+    * *
+  *
 -----------------
 */
 
 import java.util.*;
 
-public class Number_Pattern_3 {
+public class P7_Scalene_Triangle {
 
     public static void main(String[] args) {
 
@@ -25,15 +24,18 @@ public class Number_Pattern_3 {
         // Outer loop
         for (int i = 1; i <= n; i++) {
 
-            // Inner Loop
-            for (int j = i; j <= n; j++) {
+            // Inner loop -> Space print
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
 
-                System.out.print(j + " ");
-
+            // Inner loop-> Star print
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("* ");
             }
             System.out.println();
-        }
 
+        }
         sc.close();
     }
 }
