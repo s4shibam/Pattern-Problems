@@ -1,17 +1,18 @@
-// Half Pyramid or Right Angle Triangle Pattern
+// Right To Left Diagonal Pattern
 
 /* 
 -----------------
-* 
-* *
-* * *
-* * * *
-* * * * *
+        * 
+      *
+    *
+  *
+*
 -----------------
 */
+
 import java.util.*;
 
-public class P3_Half_Pyramid {
+public class Right_To_Left_Diagonal {
 
     public static void main(String[] args) {
 
@@ -24,9 +25,14 @@ public class P3_Half_Pyramid {
         // Outer loop
         for (int i = 1; i <= n; i++) {
 
-            // Inner loop
-            for (int j = 1; j <= i; j++) {
+            // Inner loop -> Space print
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
 
+            }
+
+            // Inner loop-> Star print
+            for (int j = 1; j <= 1; j++) {
                 System.out.print("* ");
             }
             System.out.println();

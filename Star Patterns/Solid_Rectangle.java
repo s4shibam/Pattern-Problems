@@ -1,18 +1,18 @@
-// Hollow Rectangle Pattern
+// Solid Rectangle Pattern
 
 /* 
 -----------------
 * * * * * 
-*       *
-*       *
-*       *
+* * * * *
+* * * * *
+* * * * *
 * * * * *
 -----------------
 */
-
 import java.util.*;
 
-public class P2_Hollow_Rectangle {
+public class Solid_Rectangle {
+
     public static void main(String[] args) {
 
         int r, c;
@@ -25,18 +25,14 @@ public class P2_Hollow_Rectangle {
 
         // Outer loop
         for (int i = 1; i <= r; i++) {
-
             // Inner loop
             for (int j = 1; j <= c; j++) {
 
-                // cell -> (i,j)
-                if (i == 1 || j == 1 || i == r || j == c)
-                    System.out.print("* ");
-                else
-                    System.out.print("  ");
+                System.out.print("* ");
             }
             System.out.println();
         }
+
         sc.close();
     }
 }

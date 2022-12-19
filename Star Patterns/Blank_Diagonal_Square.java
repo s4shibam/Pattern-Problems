@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class P12_Blank_Diagonal_Square {
+public class Blank_Diagonal_Square {
     
     public static void main(String[] args) {
         

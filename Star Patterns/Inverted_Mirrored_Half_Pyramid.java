@@ -1,20 +1,18 @@
-// Scalene Triangle Pattern
+import java.util.*;
 
 /* 
 -----------------
-        * * * * 
-      * * *
-    * *
-  *
+* * * * * 
+  * * * *
+    * * *
+      * *
+        *
 -----------------
 */
 
-import java.util.*;
-
-public class P7_Scalene_Triangle {
+public class Inverted_Mirrored_Half_Pyramid {
 
     public static void main(String[] args) {
-
         int n;
 
         Scanner sc = new Scanner(System.in);
@@ -25,12 +23,12 @@ public class P7_Scalene_Triangle {
         for (int i = 1; i <= n; i++) {
 
             // Inner loop -> Space print
-            for (int j = 1; j <= n - i; j++) {
+            for (int sp = 1; sp <= i - 1; sp++) {
                 System.out.print("  ");
             }
 
             // Inner loop-> Star print
-            for (int j = 1; j <= n - i; j++) {
+            for (int j = i; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();

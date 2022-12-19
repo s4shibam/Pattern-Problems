@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class P4_Inverted_Half_Pyramid {
+public class Inverted_Half_Pyramid {
 
     public static void main(String[] args) {
 

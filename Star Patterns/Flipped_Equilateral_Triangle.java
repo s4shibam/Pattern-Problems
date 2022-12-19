@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class P10_Flipped_Equilateral_Triangle {
+public class Flipped_Equilateral_Triangle {
 
     public static void main(String[] args) {
         int n;

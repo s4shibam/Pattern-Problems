@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class P9_Equilateral_Triangle {
+public class Equilateral_Triangle {
 
     public static void main(String[] args) {
         int n;

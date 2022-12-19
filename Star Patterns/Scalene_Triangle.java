@@ -1,18 +1,17 @@
-// Inverted Mirrored (rotated by 180 degree°) Half Pyramid Pattern
+// Scalene Triangle Pattern
 
 /* 
 -----------------
-        * 
-      * *
-    * * *
-  * * * *
-* * * * *
+        * * * * 
+      * * *
+    * *
+  *
 -----------------
 */
 
 import java.util.*;
 
-public class P5_Mirrored_Half_Pyramid {
+public class Scalene_Triangle {
 
     public static void main(String[] args) {
 
@@ -31,7 +30,7 @@ public class P5_Mirrored_Half_Pyramid {
             }
 
             // Inner loop-> Star print
-            for (int j = 1; j <= i; j++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
